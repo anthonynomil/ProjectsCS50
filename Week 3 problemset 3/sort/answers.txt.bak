@@ -1,0 +1,47 @@
+sort1 uses: Bubble sort
+
+How do you know?: The sorted txt were far quicker than all of the others but it's slower than the others in the other txt
+
+sort2 uses: Merge sort
+
+How do you know?: It's in majority faster than all the others
+
+sort3 uses: Selection sort
+
+How do you know?: Slower than sort2 but faster than sort 1 and is almost always the same time in relative to the number of numbers no matter how they're arranged.
+
+sort1: 0.099s
+       0.354s
+       7.517s
+
+       0.079s
+       0.272s
+       5.920s
+
+       0.001s
+       0.066s
+       0.659s
+
+sort2: 0.025s
+       0.088s
+       0.692s
+
+       0.023s
+       0.076s
+       0.639s
+
+       0.021s
+       0.064s
+       1.257s
+
+sort3: 0.046s
+       0.166s
+       3.378s
+
+       0.106s
+       0.164s
+       3.415s
+
+       0.045s
+       0.206s
+       3.662s
