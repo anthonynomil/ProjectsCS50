@@ -14,7 +14,7 @@ def get_cents():
             break
     return cents
 
-# Calculate by removing each type of coin one at a time and return the amount of the coins.
+# Calculate by removing each type of coin one at a time and return the amount of the coins
 def calculate_coins(n):
     coins = 0
     remaining = int(n * 100)
