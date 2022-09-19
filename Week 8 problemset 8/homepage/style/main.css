@@ -1,0 +1,85 @@
+.icon {
+  height: 50px;
+}
+
+#spiffy_teach {
+  display: none;
+}
+
+#spiffopic {
+  height: 500px;
+}
+
+.color_light {
+  background-color: #d3d3d3;
+}
+
+.color_medium {
+  background-color: #8c8c8c;
+}
+
+.color_dark {
+  background-color: #333333;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(73, 73, 73) 50%,
+    rgb(39, 39, 39) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.row {
+  margin: 1%;
+  text-align: center;
+}
+
+.card-img {
+  height: 300px;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}

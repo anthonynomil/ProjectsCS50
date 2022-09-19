@@ -1,0 +1,18 @@
+.main__body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.main__body p {
+  white-space: pre-line;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+.form-floating {
+  width: 50rem;
+}

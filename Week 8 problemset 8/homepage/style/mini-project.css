@@ -1,0 +1,29 @@
+.body {
+  display: flex;
+}
+
+.default__card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 10rem;
+}
+
+.card-header {
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 1rem 0 2rem 0;
+}
+
+.card-text {
+  padding: 2rem;
+}
+
+#outputText {
+  white-space: pre-line;
+  white-space: pre;
+}

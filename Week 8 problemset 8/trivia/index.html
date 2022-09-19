@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Trivia!</title>
+    <script>
+      // DONE: Add code to check answers to questions
+      function quest1(nb) {
+        document.querySelector("#btn1").style.backgroundColor = "#d9edff";
+        document.querySelector("#btn2").style.backgroundColor = "#d9edff";
+        document.querySelector("#btn3").style.backgroundColor = "#d9edff";
+        document.querySelector("#correct").style.visibility = "hidden";
+        document.querySelector("#incorrect").style.visibility = "hidden";
+        if (nb == 3) {
+          document.querySelector("#correct").style.visibility = "visible";
+          document.querySelector("#btn3").style.backgroundColor = "green";
+        } else if (nb == 1) {
+          document.querySelector("#incorrect").style.visibility = "visible";
+          document.querySelector("#btn1").style.backgroundColor = "red";
+        } else if (nb == 2) {
+          document.querySelector("#incorrect").style.visibility = "visible";
+          document.querySelector("#btn2").style.backgroundColor = "red";
+        }
+      }
+
+      function quest2(nb) {
+        let answer = document.querySelector("#answer").value;
+        if (answer == "Yes" || answer == "yes") {
+          document.querySelector("#incorrect2").style.visibility = "hidden";
+          document.querySelector("#correct2").style.visibility = "visible";
+          document.querySelector("input").style.backgroundColor = "green";
+        } else {
+          document.querySelector("#correct2").style.visibility = "hidden";
+          document.querySelector("#incorrect2").style.visibility = "visible";
+          document.querySelector("input").style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Part 1: Multiple Choice</h2>
+        <hr />
+        <!-- DONE: Add multiple choice question here -->
+        <h3>How are capybaras ?</h3>
+        <button id="btn1" onclick="quest1(1)">Bad</button>
+        <button id="btn2" onclick="quest1(2)">Mediocre</button>
+        <button id="btn3" onclick="quest1(3)">Good</button>
+        <p id="correct" style="visibility: hidden">Correct</p>
+        <p id="incorrect" style="visibility: hidden">Incorrect</p>
+      </div>
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr />
+        <!-- DONE: Add free response question here -->
+        <h3>Are capybaras good ?</h3>
+        <input type="text" id="answer" />
+        <button id="submit" onclick="quest2(1)">Submit</button>
+        <p id="correct2" style="visibility: hidden">Correct</p>
+        <p id="incorrect2" style="visibility: hidden">Incorrect</p>
+      </div>
+    </div>
+  </body>
+</html>
