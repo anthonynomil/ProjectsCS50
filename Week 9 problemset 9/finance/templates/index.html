@@ -1,0 +1,34 @@
+{% extends "layout.html" %} {% block title %} Portfolio {% endblock %} {% block
+main %}
+<div class="main">
+  <h1>Portfolio</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Symbols</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in database %}
+      <tr>
+        <td>{{ row["symbol"] }}</td>
+        <td>{{ row["shares"] }}</td>
+        <td>{{ row["price"] }}</td>
+        <td></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <th scope="1">Cash</th>
+        <th scope="1">{{ cash }}</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock %}
